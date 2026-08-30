@@ -103,6 +103,7 @@
   @supports not ((-webkit-text-stroke: 1px #000) or (text-stroke: 1px #000)){
     .wordmark{ color:var(--cream); -webkit-text-stroke:0; }
   }
+  .wordmark--solid{ color:var(--cream); -webkit-text-stroke:0; }
 
   .price{
     font-family:'Baloo 2', sans-serif;
@@ -945,7 +946,7 @@
     <div class="container hero__inner">
       <div class="hero__content">
         <span class="eyebrow hero__eyebrow">San Antonio, TX · Coffee Trailer</span>
-        <h1 class="hero__wordmark wordmark">Right Hand<br>Coffee</h1>
+        <h1 class="hero__wordmark wordmark"><span class="wordmark--solid">Right</span> Hand<br><span class="wordmark--solid">Coffee</span></h1>
         <p class="hero__tagline">Small trailer, big vibes.</p>
         <div class="hero__pill-row">
           <span class="status-pill" id="hero-status-pill">
