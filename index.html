@@ -385,7 +385,9 @@
     height:96px;
   }
   .marquee__track{
-    display:inline-flex;
+    display:flex;
+    flex-wrap:nowrap;
+    white-space:nowrap;
     width:max-content;
     animation:marquee 26s linear infinite;
     position:absolute;
