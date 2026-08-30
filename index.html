@@ -427,10 +427,10 @@
     animation:race 14s linear infinite;
     will-change:transform;
   }
-  .racer .rdog{ height:26px; aspect-ratio:560/205; display:block; transform:scaleX(-1); }
+  .racer .rdog{ height:26px; aspect-ratio:560/205; display:block; }
   @keyframes race{
-    0%{ transform:translateX(calc(100vw + 40px)); }
-    100%{ transform:translateX(-190px); }
+    0%{ transform:translateX(-190px); }
+    100%{ transform:translateX(calc(100vw + 40px)); }
   }
   @media (prefers-reduced-motion: reduce){
     .racer{ animation:none; left:16px; }
