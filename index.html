@@ -406,7 +406,7 @@
     to{ transform:translateX(-50%); }
   }
 
-  /* dog-chasing-lure animation along the bottom edge of the marquee */
+  /* running-dog animation along the bottom edge of the marquee */
   .race-lane{
     position:absolute;
     left:0; right:0; bottom:11px;
@@ -418,13 +418,10 @@
     bottom:9px;
     left:0;
     display:flex;
-    align-items:flex-end;
-    gap:11px;
     animation:race 14s linear infinite;
     will-change:transform;
   }
   .racer .rdog{ height:26px; aspect-ratio:560/205; display:block; }
-  .racer .lure{ width:15px; height:18px; align-self:flex-end; margin-bottom:1px; }
   @keyframes race{
     0%{ transform:translateX(-190px); }
     100%{ transform:translateX(calc(100vw + 40px)); }
@@ -988,7 +985,6 @@
     <div class="race-lane"></div>
     <div class="racer">
       <img class="rdog" src="assets/hound-cream.png" alt="">
-      <svg class="lure" viewBox="0 0 24 28" fill="none" stroke="#faf6ec" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M5 8h14l-1.4 15.5A2.5 2.5 0 0 1 15.1 26H8.9a2.5 2.5 0 0 1-2.5-2.5L5 8Z"/><path d="M3.5 8h17"/><path d="M9 4c0 1.4 6 1.4 6 0"/></svg>
     </div>
   </div>
 
