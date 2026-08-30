@@ -193,7 +193,7 @@
   }
   .site-nav__inner{
     display:grid;
-    grid-template-columns:1fr auto 1fr;
+    grid-template-columns:auto 1fr auto;
     align-items:center;
     gap:20px;
     padding:14px 24px;
@@ -215,6 +215,7 @@
     color:var(--cream);
     text-transform:uppercase;
     letter-spacing:0.01em;
+    white-space:nowrap;
   }
   .site-nav__links{
     display:flex;
@@ -762,6 +763,19 @@
   .find-list li b{ color:var(--berry); font-weight:500; }
   .find-ctas{ display:flex; gap:14px; flex-wrap:wrap; }
 
+  .find-visuals{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:28px;
+  }
+  .find-sign{
+    width:100%;
+    max-width:190px;
+    height:auto;
+    filter:drop-shadow(0 20px 26px rgba(0,0,0,0.4));
+  }
+  .find-visuals .map-placeholder{ width:100%; }
   .map-placeholder{
     aspect-ratio:4/3;
     border-radius:var(--radius);
@@ -1211,10 +1225,14 @@
         </div>
       </div>
 
-      <div class="map-placeholder" role="img" aria-label="Map placeholder showing Right Hand Coffee's location at 15503 Babcock Rd, San Antonio, TX">
-        <div class="map-placeholder__pin">
-          <span class="map-placeholder__dot"></span>
-          <span class="map-placeholder__text">15503 Babcock Rd<br>San Antonio, TX 78255</span>
+      <div class="find-visuals">
+        <img class="find-sign" src="assets/aframe-sign.png" alt="Right Hand Coffee A-frame sidewalk sign">
+
+        <div class="map-placeholder" role="img" aria-label="Map placeholder showing Right Hand Coffee's location at 15503 Babcock Rd, San Antonio, TX">
+          <div class="map-placeholder__pin">
+            <span class="map-placeholder__dot"></span>
+            <span class="map-placeholder__text">15503 Babcock Rd<br>San Antonio, TX 78255</span>
+          </div>
         </div>
       </div>
     </div>
