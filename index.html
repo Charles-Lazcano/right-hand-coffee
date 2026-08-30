@@ -642,6 +642,22 @@
   @media (max-width: 640px){
     .price-grid{ grid-template-columns:1fr; }
     .price-list__extras{ grid-template-columns:1fr; gap:28px; }
+
+    /* Featured Drinks: swipeable side-by-side strip on mobile */
+    .menu-grid{
+      display:grid;
+      grid-template-columns:none;
+      grid-auto-flow:column;
+      grid-auto-columns:78%;
+      gap:16px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      -webkit-overflow-scrolling:touch;
+      scrollbar-width:none;
+      padding-bottom:4px;
+    }
+    .menu-grid::-webkit-scrollbar{ display:none; }
+    .menu-grid .drink-card{ scroll-snap-align:start; }
   }
 
   /* ---------------- MERCH & GIFT CARDS (cream) ---------------- */
