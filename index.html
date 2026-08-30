@@ -425,25 +425,13 @@
     animation:race 14s linear infinite;
     will-change:transform;
   }
-  .racer .rdog{
-    height:26px;
-    aspect-ratio:560/205;
-    display:block;
-    animation:gallop .5s steps(4) infinite;
-  }
+  .racer .rdog{ height:26px; aspect-ratio:560/205; display:block; }
   @keyframes race{
     0%{ transform:translateX(-190px); }
     100%{ transform:translateX(calc(100vw + 40px)); }
   }
-  @keyframes gallop{
-    0%, 100%{ transform:translateY(0) rotate(0deg); }
-    25%{ transform:translateY(-3px) rotate(-3deg); }
-    50%{ transform:translateY(0) rotate(0deg); }
-    75%{ transform:translateY(-2px) rotate(3deg); }
-  }
   @media (prefers-reduced-motion: reduce){
     .racer{ animation:none; left:16px; }
-    .racer .rdog{ animation:none; }
   }
 
   /* ---------------- GENERIC SECTION ---------------- */
