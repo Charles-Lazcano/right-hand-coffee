@@ -276,7 +276,6 @@
     .site-nav__links.is-open{ max-height:280px; }
     .site-nav__links li{ width:100%; }
     .site-nav__links a{ display:block; padding:14px 24px; border-bottom:1px solid var(--line-on-navy); width:100%; }
-    .site-nav__right .status-pill{ display:none; }
   }
 
   /* ---------------- HERO ---------------- */
@@ -928,10 +927,6 @@
     </nav>
 
     <div class="site-nav__right">
-      <span class="status-pill" id="nav-status-pill">
-        <span class="status-pill__dot"></span>
-        <span id="nav-status-text">Checking hours…</span>
-      </span>
       <button class="hamburger" id="hamburger" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle menu">
         <span></span><span></span><span></span>
       </button>
@@ -1332,7 +1327,6 @@
     var now = new Date();
     var status = getStatus(now);
 
-    applyPill(document.getElementById('nav-status-pill'), document.getElementById('nav-status-text'), status);
     applyPill(document.getElementById('hero-status-pill'), document.getElementById('hero-status-text'), status);
 
     var todayRange = HOURS[now.getDay()];
