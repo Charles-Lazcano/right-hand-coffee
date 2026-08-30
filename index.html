@@ -192,12 +192,15 @@
     border-bottom:1px solid var(--line-on-navy);
   }
   .site-nav__inner{
-    display:flex;
+    display:grid;
+    grid-template-columns:1fr auto 1fr;
     align-items:center;
-    justify-content:space-between;
     gap:20px;
     padding:14px 24px;
   }
+  .site-nav__inner > .site-nav__brand{ justify-self:start; }
+  .site-nav__inner > nav{ justify-self:center; }
+  .site-nav__inner > .site-nav__right{ justify-self:end; }
   .site-nav__brand{
     display:flex;
     align-items:center;
