@@ -1137,6 +1137,12 @@
     .fall-menu__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 56px; }
   }
 
+  /* Desktop: illustrated leaf border from the fall menu art (tablet/phone keep the SVG leaves) */
+  @media (min-width: 1081px) {
+    .fall-menu { background: var(--fm-brown-deep) url("assets/fall-bg.jpg") center / cover no-repeat; }
+    .fall-menu::before { opacity: 0.3; }
+  }
+
   .fall-menu__hint { display: none; }
 
   /* Phone: side-by-side strip you swipe through, next drink peeking in */
