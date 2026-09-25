@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
+<defs>
+<filter id="b1" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+<filter id="b2" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
+<g id="maple"><path d="M50 4 L56 21 L66 15 L63 35 L78 27 L75 38 L93 35 L85 50 L95 56 L72 64 L76 75 L56 70 L53 86 L51 86 L51 97 L49 97 L49 86 L47 86 L44 70 L24 75 L28 64 L5 56 L15 50 L7 35 L25 38 L22 27 L37 35 L34 15 L44 21 Z" fill-rule="evenodd"/><path d="M50 96 L50 12 M50 60 L22 32 M50 60 L78 32 M50 66 L14 55 M50 66 L86 55" fill="none" stroke="#2a180c" stroke-opacity=".45" stroke-width="1.6"/></g>
+<g id="oval"><path d="M50 4 C82 24 86 66 50 92 C14 66 18 24 50 4 Z M49 92 L49 99 L51 99 L51 92 Z" fill-rule="evenodd"/><path d="M50 92 L50 10 M50 40 L34 30 M50 40 L66 30 M50 60 L30 48 M50 60 L70 48" fill="none" stroke="#2a180c" stroke-opacity=".45" stroke-width="1.6"/></g>
+<g id="oak"><path d="M50 4 C58 10 64 12 60 20 C70 18 74 26 66 32 C78 32 80 42 68 46 C80 50 78 60 66 60 C74 68 68 76 58 72 C60 80 56 86 51 88 L51 98 L49 98 L49 88 C44 86 40 80 42 72 C32 76 26 68 34 60 C22 60 20 50 32 46 C20 42 22 32 34 32 C26 26 30 18 40 20 C36 12 42 10 50 4 Z" fill-rule="evenodd"/><path d="M50 96 L50 10 M50 36 L36 30 M50 36 L64 30 M50 54 L32 48 M50 54 L68 48" fill="none" stroke="#2a180c" stroke-opacity=".45" stroke-width="1.6"/></g>
+</defs>
+<use href="#maple" transform="translate(385 835) rotate(350) scale(1.64)" fill="#7a4526" opacity="0.30" filter="url(#b1)"/>
+<use href="#maple" transform="translate(840 335) rotate(50) scale(2.47)" fill="#6b3b1f" opacity="0.41" filter="url(#b1)"/>
+<use href="#maple" transform="translate(291 115) rotate(10) scale(2.07)" fill="#4f2d18" opacity="0.43" filter="url(#b1)"/>
+<use href="#maple" transform="translate(114 625) rotate(275) scale(1.41)" fill="#5c341c" opacity="0.38" filter="url(#b1)"/>
+<use href="#oak" transform="translate(484 103) rotate(300) scale(2.81)" fill="#5c341c" opacity="0.38" filter="url(#b1)"/>
+<use href="#maple" transform="translate(-22 439) rotate(165) scale(1.66)" fill="#a0622b" opacity="0.35" filter="url(#b1)"/>
+<use href="#oval" transform="translate(18 867) rotate(181) scale(1.95)" fill="#4f2d18" opacity="0.44" filter="url(#b1)"/>
+<use href="#maple" transform="translate(-17 884) rotate(314) scale(2.72)" fill="#6b3b1f" opacity="0.38" filter="url(#b1)"/>
+<use href="#maple" transform="translate(1158 124) rotate(288) scale(1.56)" fill="#6b3b1f" opacity="0.30" filter="url(#b1)"/>
+<use href="#maple" transform="translate(138 392) rotate(261) scale(3.06)" fill="#8a552b" opacity="0.37" filter="url(#b1)"/>
+<use href="#maple" transform="translate(1425 974) rotate(191) scale(1.62)" fill="#5c341c" opacity="0.40" filter="url(#b1)"/>
+<use href="#oval" transform="translate(138 273) rotate(318) scale(3.20)" fill="#4f2d18" opacity="0.42" filter="url(#b1)"/>
+<use href="#maple" transform="translate(860 8) rotate(15) scale(1.40)" fill="#8a552b" opacity="0.33" filter="url(#b1)"/>
+<use href="#maple" transform="translate(1600 971) rotate(10) scale(2.13)" fill="#6b3b1f" opacity="0.37" filter="url(#b1)"/>
+<use href="#maple" transform="translate(39 770) rotate(350) scale(1.57)" fill="#94592a" opacity="0.35" filter="url(#b1)"/>
+<use href="#maple" transform="translate(-11 -30) rotate(183) scale(1.93)" fill="#a0622b" opacity="0.34" filter="url(#b1)"/>
+<use href="#oval" transform="translate(753 33) rotate(252) scale(1.50)" fill="#6b3b1f" opacity="0.44" filter="url(#b1)"/>
+<use href="#oak" transform="translate(-60 103) rotate(73) scale(1.07)" fill="#6b3b1f" opacity="0.48" filter="url(#b2)"/>
+<use href="#oval" transform="translate(930 224) rotate(141) scale(1.61)" fill="#8a552b" opacity="0.41" filter="url(#b2)"/>
+<use href="#oak" transform="translate(1409 802) rotate(154) scale(1.57)" fill="#7a4526" opacity="0.45" filter="url(#b2)"/>
+<use href="#maple" transform="translate(669 15) rotate(44) scale(1.05)" fill="#a0622b" opacity="0.40" filter="url(#b2)"/>
+<use href="#maple" transform="translate(597 881) rotate(132) scale(1.04)" fill="#a0622b" opacity="0.45" filter="url(#b2)"/>
+<use href="#oak" transform="translate(146 857) rotate(79) scale(2.59)" fill="#8a552b" opacity="0.50" filter="url(#b2)"/>
+<use href="#maple" transform="translate(891 969) rotate(59) scale(2.07)" fill="#94592a" opacity="0.48" filter="url(#b2)"/>
+<use href="#maple" transform="translate(1538 511) rotate(358) scale(1.15)" fill="#8a552b" opacity="0.46" filter="url(#b2)"/>
+<use href="#oval" transform="translate(1587 650) rotate(128) scale(1.50)" fill="#5c341c" opacity="0.41" filter="url(#b2)"/>
+<use href="#maple" transform="translate(321 152) rotate(122) scale(1.25)" fill="#a0622b" opacity="0.40" filter="url(#b2)"/>
+<use href="#oval" transform="translate(1329 74) rotate(138) scale(1.28)" fill="#94592a" opacity="0.46" filter="url(#b2)"/>
+<use href="#oak" transform="translate(1453 848) rotate(41) scale(1.72)" fill="#6b3b1f" opacity="0.49" filter="url(#b2)"/>
+<use href="#maple" transform="translate(1351 960) rotate(98) scale(1.71)" fill="#7a4526" opacity="0.36" filter="url(#b2)"/>
+<use href="#maple" transform="translate(1321 247) rotate(295) scale(1.56)" fill="#5c341c" opacity="0.46" filter="url(#b2)"/>
+<use href="#oak" transform="translate(903 886) rotate(331) scale(1.43)" fill="#94592a" opacity="0.37" filter="url(#b2)"/>
+<use href="#oval" transform="translate(1372 811) rotate(100) scale(2.29)" fill="#a0622b" opacity="0.50"/>
+<use href="#maple" transform="translate(761 -18) rotate(97) scale(2.04)" fill="#94592a" opacity="0.58"/>
+<use href="#maple" transform="translate(221 774) rotate(94) scale(1.81)" fill="#a0622b" opacity="0.46"/>
+<use href="#maple" transform="translate(978 670) rotate(44) scale(2.43)" fill="#7a4526" opacity="0.49"/>
+<use href="#maple" transform="translate(240 792) rotate(150) scale(1.47)" fill="#5c341c" opacity="0.60"/>
+<use href="#oak" transform="translate(1460 811) rotate(190) scale(1.15)" fill="#6b3b1f" opacity="0.47"/>
+<use href="#maple" transform="translate(-15 510) rotate(94) scale(2.56)" fill="#7a4526" opacity="0.60"/>
+<use href="#maple" transform="translate(863 894) rotate(226) scale(2.29)" fill="#8a552b" opacity="0.59"/>
+<use href="#maple" transform="translate(1283 32) rotate(242) scale(2.02)" fill="#5c341c" opacity="0.52"/>
+<use href="#oak" transform="translate(1103 973) rotate(358) scale(1.66)" fill="#5c341c" opacity="0.57"/>
+<use href="#maple" transform="translate(1572 368) rotate(182) scale(1.58)" fill="#7a4526" opacity="0.45"/>
+<use href="#maple" transform="translate(1532 563) rotate(336) scale(1.57)" fill="#6b3b1f" opacity="0.52"/>
+<use href="#maple" transform="translate(494 181) rotate(156) scale(2.28)" fill="#a0622b" opacity="0.57"/>
+<use href="#oval" transform="translate(42 698) rotate(142) scale(2.00)" fill="#6b3b1f" opacity="0.58"/>
+</svg>
