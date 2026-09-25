@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Baloo+2:wght@500;700;800&family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Titan+One&family=Patrick+Hand&display=swap" rel="stylesheet">
 <style>
   :root{
     --navy:#2b3a52;
@@ -991,6 +992,157 @@
   }
   .footer-meta a{ text-decoration:none; }
   .footer-meta a:hover{ color:var(--berry); }
+
+  /* ---------------- FALL SEASONAL DRINKS (all scoped under .fall-menu) ---------------- */
+  .fall-menu {
+    --fm-brown-deep: #2E1D12;
+    --fm-brown: #4A3020;
+    --fm-brown-glow: #6B4630;
+    --fm-cream: #FFF6E6;
+    --fm-cream-soft: #F3E6D2;
+    --fm-pumpkin: #E3802F;
+    --fm-pumpkin-deep: #B85E1C;
+    --fm-ink: #1A110A;
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    padding: clamp(56px, 8vw, 104px) 20px;
+    color: var(--fm-cream);
+    background:
+      radial-gradient(ellipse at 50% 30%, var(--fm-brown-glow) 0%, transparent 60%),
+      radial-gradient(ellipse at 15% 90%, var(--fm-brown) 0%, transparent 55%),
+      var(--fm-brown-deep);
+  }
+
+  /* Film-grain texture, like the poster background */
+  .fall-menu::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    opacity: 0.35;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  }
+
+  .fall-menu__inner {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
+  /* Headline: cream letters with a heavy black outline */
+  .fall-menu__title {
+    margin: 0 0 clamp(36px, 5vw, 64px);
+    text-align: center;
+    font-family: "Titan One", "Arial Rounded MT Bold", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: clamp(2rem, 5.2vw, 3.75rem);
+    line-height: 1.05;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--fm-cream);
+    -webkit-text-stroke: 0.14em var(--fm-ink);
+    paint-order: stroke fill;
+    text-shadow: 0 0.08em 0 var(--fm-ink);
+  }
+
+  .fall-menu__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: clamp(24px, 3vw, 40px);
+  }
+
+  .fall-drink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Photo framed like a sticker: cream edge + pumpkin offset */
+  .fall-drink__photo {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 22px;
+    overflow: hidden;
+    border: 5px solid var(--fm-cream);
+    box-shadow: 8px 8px 0 var(--fm-pumpkin);
+    margin-bottom: 26px;
+    background: var(--fm-brown);
+  }
+
+  .fall-drink__photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+  }
+
+  /* Drink name: cream fill, thick pumpkin outline — matches the poster titles */
+  .fall-drink__name {
+    margin: 0 0 14px;
+    font-family: "Titan One", "Arial Rounded MT Bold", system-ui, sans-serif;
+    font-weight: 400;
+    font-size: clamp(1.45rem, 2.1vw, 1.8rem);
+    line-height: 1.12;
+    letter-spacing: -0.005em;
+    text-transform: uppercase;
+    color: var(--fm-cream);
+    -webkit-text-stroke: 0.2em var(--fm-pumpkin);
+    paint-order: stroke fill;
+    text-shadow: 0 0.12em 0 var(--fm-pumpkin-deep), 0 0.2em 0.3em rgba(0, 0, 0, 0.45);
+  }
+
+  /* Hand-lettered description, spaced out like the poster */
+  .fall-drink__desc {
+    margin: 0;
+    max-width: 26ch;
+    font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif;
+    font-size: 1.15rem;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--fm-cream-soft);
+    text-shadow: 0 2px 0 var(--fm-ink);
+  }
+
+  /* Customization note: "(make it dirty with espresso)" etc. */
+  .fall-drink__option {
+    margin: 14px 0 0;
+    padding: 6px 14px;
+    border: 2px solid var(--fm-pumpkin);
+    border-radius: 18px;
+    font-family: "Patrick Hand", "Comic Sans MS", system-ui, sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fm-cream);
+    background: rgba(26, 17, 10, 0.35);
+  }
+
+  .fall-drink__price {
+    margin: 14px 0 0;
+    font-family: "Titan One", system-ui, sans-serif;
+    font-size: 1.3rem;
+    color: var(--fm-pumpkin);
+  }
+
+  /* Tablet: 2 across */
+  @media (max-width: 1080px) {
+    .fall-menu__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 56px; }
+  }
+
+  /* Phone: 1 across */
+  @media (max-width: 600px) {
+    .fall-menu__grid { grid-template-columns: minmax(0, 1fr); row-gap: 52px; }
+    .fall-drink__photo { max-width: 360px; }
+  }
+
+  /* Full-bleed inside the menu section; keeps the old card grid's gap above the price list */
+  .menu > .fall-menu{ margin-bottom:56px; }
 </style>
 </head>
 <body>
@@ -1075,51 +1227,68 @@
   <section class="menu" id="menu">
     <div class="container">
       <div class="section-head">
-        <span class="eyebrow">Back to Cool · Seasonal Menu</span>
+        <span class="eyebrow">Fall Menu</span>
         <h2 class="section-heading">The Menu</h2>
-        <p>Three signature drinks this season, plus everyday classics made your way.</p>
+        <p>Four fall drinks this season, plus everyday classics made your way.</p>
       </div>
+    </div>
 
+    <section class="fall-menu" id="fall-menu" aria-labelledby="fall-menu-title">
+      <div class="fall-menu__inner">
+        <h2 class="fall-menu__title" id="fall-menu-title">Wait, it’s fall already?</h2>
+
+        <div class="fall-menu__grid">
+
+          <article class="fall-drink">
+            <div class="fall-drink__photo">
+              <img src="assets/menu_fall_pumpkin.jpg" alt="Pumpkin Tres Leches Cold Brew with cinnamon-dusted foam" loading="lazy" width="800" height="795">
+            </div>
+            <h3 class="fall-drink__name">Pumpkin Tres Leches Cold Brew</h3>
+            <p class="fall-drink__desc">Cold brew topped with scratch-made pumpkin tres leches cold foam</p>
+            <!-- <p class="fall-drink__price">$0.00</p> -->
+          </article>
+
+          <article class="fall-drink">
+            <div class="fall-drink__photo">
+              <img src="assets/menu_fall_chai.jpg" alt="Pumpkin Cream Chai with cinnamon-dusted foam" loading="lazy" width="800" height="795">
+            </div>
+            <h3 class="fall-drink__name">Pumpkin Cream Chai</h3>
+            <p class="fall-drink__desc">Chai + milk + pumpkin tres leches cold foam</p>
+            <p class="fall-drink__option">Make it dirty with espresso</p>
+            <!-- <p class="fall-drink__price">$0.00</p> -->
+          </article>
+
+          <article class="fall-drink">
+            <div class="fall-drink__photo">
+              <img src="assets/menu_fall_latte.jpg" alt="Pumpkin Pie Latte with an espresso swirl" loading="lazy" width="800" height="795">
+            </div>
+            <h3 class="fall-drink__name">Pumpkin Pie Latte</h3>
+            <p class="fall-drink__desc">Pumpkin pie sauce + milk</p>
+            <p class="fall-drink__option">Espresso or matcha</p>
+            <!-- <p class="fall-drink__price">$0.00</p> -->
+          </article>
+
+          <article class="fall-drink">
+            <div class="fall-drink__photo">
+              <img src="assets/menu_fall_matcha.jpg" alt="Apple Jax Matcha with apple cinnamon syrup swirl" loading="lazy" width="800" height="795">
+            </div>
+            <h3 class="fall-drink__name">Apple Jax Matcha</h3>
+            <p class="fall-drink__desc">Scratch-made apple cinny syrup + milk</p>
+            <p class="fall-drink__option">Matcha or espresso</p>
+            <!-- <p class="fall-drink__price">$0.00</p> -->
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
       <!--
         PRICING NOTE FOR OWNER REVIEW:
         Every price below, and the full menu list, is a PLACEHOLDER for
         this pitch/spec site. Please confirm real menu items and pricing
         before publishing.
       -->
-
-      <p class="eyebrow" style="color:var(--berry); margin:0 0 16px;">Featured Drinks</p>
-
-      <div class="menu-grid">
-        <article class="drink-card">
-          <div class="drink-card__photo"><img src="assets/menu_pbj.jpg" alt="PB & J Latte with raspberry cold foam"></div>
-          <div class="drink-card__body">
-            <span class="drink-card__tag">Signature</span>
-            <h3>PB &amp; J Latte</h3>
-            <p>House-made peanut butter sauce + espresso + milk, topped with raspberry cold foam.</p>
-            <div class="drink-card__price price">$6.50</div>
-          </div>
-        </article>
-
-        <article class="drink-card">
-          <div class="drink-card__photo"><img src="assets/menu_matcha_foam.jpg" alt="Cloud Nine Matcha with sweet cream cold foam"></div>
-          <div class="drink-card__body">
-            <span class="drink-card__tag">Matcha</span>
-            <h3>Cloud Nine Matcha</h3>
-            <p>Iced matcha latte finished with a sweet cream cold foam cap.</p>
-            <div class="drink-card__price price">$6.50</div>
-          </div>
-        </article>
-
-        <article class="drink-card">
-          <div class="drink-card__photo"><img src="assets/menu_coldbrew_cream.jpg" alt="Wake-Up Call cold brew topped with vanilla cream"></div>
-          <div class="drink-card__body">
-            <span class="drink-card__tag">Cold Brew</span>
-            <h3>Wake-Up Call</h3>
-            <p>Slow-steeped cold brew topped with lightly sweet vanilla cream.</p>
-            <div class="drink-card__price price">$5.50</div>
-          </div>
-        </article>
-      </div>
 
       <div class="price-list">
         <div class="price-list__rule"></div>
